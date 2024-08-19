@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-color: rgb(243, 231, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+}
+ main {
+    margin: 5rem 0 1rem 0;
+    width: 35rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1.2rem;
+    gap: .5rem;
+    padding: 15px;
+}
+svg {
+    width: 30px;
+}
+.about {
+    border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+.option {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 15px;
+}
+.option_letter {
+    display: none;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px;
+    color: grey;
+}
+.option:hover {
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+.about svg, .last_about svg {
+    float: right;
+    margin-top: .7rem;
+    cursor: pointer;
+}
+@media (max-width: 760px) { 
+    main {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
